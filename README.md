@@ -18,14 +18,22 @@ ProcessTodoMonitor is a module for ProcessWire CMS that scans your template file
 
 - Configure file extensions and keywords in your `site/config.php`:
   ```php
-  $config->todoMonitorExtensions = "php,css,js,twig";
-  $config->todoMonitorKeywords = 'Todo,Note,Info,Bug,Review';
+  $config->todoMonitorExtensions = "php,css,js,twig,latte";
+  $config->todoMonitorKeywords = 'Bug,Todo,Info';
+  ```
+- Add comments
+  ```twig
+  @BUG empty lists return broken UI
+  @TODO add`empty state` dialogue
+  @INFO added for demo purposes
   ```
 
 ## Usage
 
 - The module runs a scan every 5 minutes using LazyCron.
 - Access the TODO Monitor page in the admin to view your TODO items.
+
+![ProcessTodoMonitor Module](./ProcessTodoMonitor.module.png)
 
 ## License
 
