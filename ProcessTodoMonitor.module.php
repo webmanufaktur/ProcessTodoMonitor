@@ -29,6 +29,7 @@ class ProcessTodoMonitor extends Process
       'singular' => 'true',
       'icon' => 'search',
       'page' => [
+        'parent' => 'setup',
         'name' => 'todomonitor',
         'title' => 'Todo Monitor',
       ]
